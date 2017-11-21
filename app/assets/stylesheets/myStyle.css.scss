@@ -1,13 +1,24 @@
-.jumbotron {
-   
-}
+
 
 .painter {
-     background-color: white !important;
+     background-color: #ffffff !important;
     border: 9px solid black;
     border-radius: 25px !important;
 }
 
 .space {
     visibility: hidden;
+}
+
+.whiteLand {
+    background-color:#ffffff !important;
+    border: 9px solid black !important;
+    border-radius: 25px !important;
+}
+
+.blackwhite {
+    background-color: #ffffff;
+    border: 9px solid black;
+    border-radius: 25px;
+    
 }
