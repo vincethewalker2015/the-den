@@ -3,7 +3,8 @@ class ProfilesController < ApplicationController
   def new
     # form where a user can fill out their own profile.
     @user = User.find( params[:user_id] )
-    @profile = @user.build_profile
+    #@profile = @user.build_profile - This creates an error if you want to return back to users showpage. Best use the one below'
+    @profile = Profile.new
   end
   
   def create
