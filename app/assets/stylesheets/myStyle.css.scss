@@ -1,26 +1,13 @@
 
 
-.painter {
-     background-color: #ffffff !important;
+.jumbotron.painter {
+     background-color: #ffffff;
     border: 9px solid black;
-    border-radius: 25px !important;
+    border-radius: 25px !important ;
 }
 
 .space {
     visibility: hidden;
-}
-
-.whiteLand {
-    background-color:#ffffff !important;
-    border: 9px solid black !important;
-    border-radius: 25px !important;
-}
-
-.blackwhite {
-    background-color: #ffffff !important;
-    border: 9px solid black !important;
-    border-radius: 25px !important;
-    
 }
 
 .pname {
@@ -36,4 +23,11 @@
 
 .me a{
     color: #d3d3d3;
+    
+}
+
+.well.profile-black-white {
+    background-color: #ffffff;
+    border: 9px solid black;
+    border-radius: 25px;
 }
