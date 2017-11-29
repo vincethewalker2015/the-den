@@ -16,7 +16,11 @@
                             <%= link_to user do %>
                                 <h2 class="show-page-header"><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
                             <% end %>
-                            <p><%= user.profile.job_title %></p>
+                            <p><%= user.profile.job_title %>
+                                <% if user.plan_id == 2 %>
+                                    <span class="label label-success">PREMIUM MEMBER</span>
+                                <% end %>
+                            </p>
                             <p><%= user.profile.description %></p>
                             <% if current_user.plan_id == 2 %>
                             <p><%= user.profile.phone_number %></p>

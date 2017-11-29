@@ -11,5 +11,9 @@ module UsersHelper
            "<i class='fa fa-key'></i>".html_safe
        end
    end
+   
+   def leaving_us
+       "<i class='fa fa-meh-o'></i>".html_safe
+   end
     
 end
