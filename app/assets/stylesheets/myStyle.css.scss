@@ -26,11 +26,26 @@
     
 }
 
+/* Well effects - adding black line around border */
+
 .well.profile-black-white {
     background-color: #ffffff;
     border: 9px solid black;
     border-radius: 25px;
 }
+
+.well.profile-black-white-thin {
+    background-color: #ffffff;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.well.profile-black-white-thin-b {
+    background-color: #e6f7ff;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
 
 /* Font Awesome Icons in users_helper */
 
@@ -65,11 +80,22 @@
     text-align: center;
     color:white;
 }
+
+/* This collapses the margin from the top on certain h tags */
 .show-page-header{
     margin-top: 0px;
 }
+
 img {
     width: 150px;
     border: .5px solid black;
     border-radius: 20px;
+}
+
+/* Avatar Sizeon (users/show)  */
+.user-show-avatar{
+  height: 180px;
+  width: 180px;
+  border-radius: 8px;
+  border: 1px solid black;
 }
