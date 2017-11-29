@@ -20,5 +20,9 @@
         <%= @user.profile.contact_email %><br/>
       </div>
     <% end %>
+    <div class="well profile-black-white">
+      <%= link_to "Edit your profile", edit_user_profile_path(current_user) , class: 'btn btn-primary' %>
+      <%= link_to "Change your Password", edit_user_registration_path, class: 'btn btn-default-orange',  id: 'orange' %>
+    </div>
   </div>
 </div>
