@@ -40,6 +40,8 @@ gem 'figaro', '1.0.0'
 gem 'paperclip', '4.2.1'
 # Use AWS S3 to store image files instead of heroku
 gem 'aws-sdk'
+# env variable to keep sensitive data hidden
+gem 'dotenv-rails', :groups => [:development, :test]
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
 # Use unicorn as the app server
