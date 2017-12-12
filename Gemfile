@@ -36,10 +36,11 @@ gem 'devise', '3.4.1'
 gem 'stripe', '1.16.1'
 # Use figaro to hide secret keys
 gem 'figaro', '1.0.0'
-# Use paperclip for image uploads
-gem 'paperclip', '4.2.1'
-# Use AWS S3 to store image files instead of heroku
-gem 'aws-sdk'
+# Use CarrierWave for image uploads
+gem 'carrierwave', '1.1.0'
+gem 'mini_magick', '4.7.0'
+# Use Fog for aws
+gem 'fog-aws'
 # env variable to keep sensitive data hidden
 gem 'dotenv-rails', :groups => [:development, :test]
 # Use ActiveModel has_secure_password
