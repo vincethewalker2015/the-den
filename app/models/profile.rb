@@ -1,7 +1,15 @@
 class Profile < ActiveRecord::Base
     belongs_to :user 
     mount_uploader :picture, PictureUploader
-    #has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
-    #validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/   
+    validate  :picture_size
+    
+    
+    private
+    # Validates the size of the uploaded picture.
+    def picture_size
+       if picture.size > 5.megabytes
+           errors.add(:picture, "Hey! this picture should be less than 5MB")
+       end
+    end
     
 end
