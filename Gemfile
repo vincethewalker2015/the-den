@@ -41,6 +41,8 @@ gem 'carrierwave', '1.1.0'
 gem 'mini_magick', '4.7.0'
 # Use Fog for aws
 gem 'fog'
+
+
 # env variable to keep sensitive data hidden
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
