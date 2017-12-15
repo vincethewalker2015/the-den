@@ -36,7 +36,7 @@
         <% if user_signed_in? %>
           <% if current_user.profile %>
             <li class="pname"><%= current_user.profile.first_name %></li>
-            <li><%= link_to "Community Page", users_path %></li>
+            <li id="borderWhite"><%= link_to "Community Page", users_path %></li>
             <li><%= link_to "My Page", user_path(current_user) %></li>
       	  <% end %>
       	<% end %>
