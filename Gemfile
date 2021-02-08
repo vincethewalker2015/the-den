@@ -33,7 +33,7 @@ gem 'stripe', '1.16.1'
 # Use figaro to hide secret keys
 gem 'figaro', '1.0.0'
 # Use CarrierWave for image uploads
-gem 'carrierwave', '1.1.0'
+gem 'carrierwave', '1.3.2'
 gem 'mini_magick', '4.9.5'
 # Use Fog for aws
 gem 'fog'
